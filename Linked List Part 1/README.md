@@ -22,3 +22,11 @@ Step 2: Create a pointer, say res, to l1. An iteration is basically iterating th
 Step 3: Start iteration. Create a variable, say, temp. It will keep track of the last node sorted list in an iteration.
 Step 4: Once an iteration is complete, link node pointed by temp to node pointed by l2. Swap l1 and l2.
 Step 5: If any one of the pointers among l1 and l2 is NULL, then move the node pointed by temp to the next higher value node.
+
+# 4.Remove Nth Node From End of List
+What if we had to modify the same above approach to work in just one traversal? Let’s see what all information we have here:
+We have the flexibility of using two-pointers now.
+We know, that the n-th node from the end is the same as (total nodes – n)th node from start.
+But, we are not allowed to calculate total nodes, as we can do only one traversal.
+What if, one out of the two-pointers is at the nth node from start instead of the end? Will it make anything easier for us?
+Yes, with two pointers in hand out of which one is at the n-th node from start, we can just advance both of them till the end simultaneously, once the faster reaches the end, the slower will stand at the n-th node from the end.
