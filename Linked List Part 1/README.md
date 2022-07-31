@@ -12,3 +12,13 @@ At last, we link the second node to the head and the first node to NULL. We retu
 
 # 2.Middle of the Linked List
 In the Tortoise-Hare approach, we increment slow ptr by 1 and fast ptr by 2, so if take a close look fast ptr will travel double than that of the slow pointer. So when the fast ptr will be at the end of Linked List, slow ptr would have covered half of Linked List till then. So slow ptr will be pointing towards the middle of Linked List.
+
+#3.Merge Two Sorted Lists
+The idea to do it without extra space is to play around with the next pointers of nodes in the two input lists and arrange them in a fashion such that all nodes are linked in increasing order of values.
+
+Approach :
+Step 1: Create two pointers, say l1 and l2. Compare the first node of both lists and find the small among the two. Assign pointer l1 to the smaller value node.
+Step 2: Create a pointer, say res, to l1. An iteration is basically iterating through both lists till the value pointed by l1 is less than or equal to the value pointed by l2.
+Step 3: Start iteration. Create a variable, say, temp. It will keep track of the last node sorted list in an iteration.
+Step 4: Once an iteration is complete, link node pointed by temp to node pointed by l2. Swap l1 and l2.
+Step 5: If any one of the pointers among l1 and l2 is NULL, then move the node pointed by temp to the next higher value node.
