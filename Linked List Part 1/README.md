@@ -13,7 +13,7 @@ At last, we link the second node to the head and the first node to NULL. We retu
 # 2.Middle of the Linked List
 In the Tortoise-Hare approach, we increment slow ptr by 1 and fast ptr by 2, so if take a close look fast ptr will travel double than that of the slow pointer. So when the fast ptr will be at the end of Linked List, slow ptr would have covered half of Linked List till then. So slow ptr will be pointing towards the middle of Linked List.
 
-#3.Merge Two Sorted Lists
+# 3.Merge Two Sorted Lists
 The idea to do it without extra space is to play around with the next pointers of nodes in the two input lists and arrange them in a fashion such that all nodes are linked in increasing order of values.
 
 Approach :
