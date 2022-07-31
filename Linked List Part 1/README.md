@@ -10,3 +10,5 @@ As we reach the end of the list, we make the end node the head. Then receive pre
 
 At last, we link the second node to the head and the first node to NULL. We return to our new head.
 
+# 2.Middle of the Linked List
+In the Tortoise-Hare approach, we increment slow ptr by 1 and fast ptr by 2, so if take a close look fast ptr will travel double than that of the slow pointer. So when the fast ptr will be at the end of Linked List, slow ptr would have covered half of Linked List till then. So slow ptr will be pointing towards the middle of Linked List.
