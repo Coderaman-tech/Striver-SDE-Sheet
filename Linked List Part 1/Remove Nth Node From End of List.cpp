@@ -23,6 +23,7 @@ public:
             fast=fast->next;
         }
         slow->next=slow->next->next;
+        // start node is used for the edge case
         return start->next;
         
     }
