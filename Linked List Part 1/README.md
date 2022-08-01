@@ -30,3 +30,6 @@ We know, that the n-th node from the end is the same as (total nodes – n)th no
 But, we are not allowed to calculate total nodes, as we can do only one traversal.
 What if, one out of the two-pointers is at the nth node from start instead of the end? Will it make anything easier for us?
 Yes, with two pointers in hand out of which one is at the n-th node from start, we can just advance both of them till the end simultaneously, once the faster reaches the end, the slower will stand at the n-th node from the end.
+
+#  Add Two Numbers
+ Keep track of the carry using a variable and simulate digits-by-digits sum starting from the head of the list, which contains the least significant digit.
