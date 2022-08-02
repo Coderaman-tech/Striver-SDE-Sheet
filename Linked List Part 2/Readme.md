@@ -4,3 +4,6 @@ The difference of length method requires various steps to work on it. Using the 
 *Take two dummy nodes for each list. Point each to the head of the lists.
 
 *Iterate over them. If anyone becomes null, point them to the head of the opposite lists and continue iterating until they collide.
+
+# 2.Linked List Cycle
+Using slow and fast pointer.
