@@ -10,9 +10,14 @@ Using slow and fast pointer.
 
 # 3.Palindrome Linked List
 *Approach 1- Store every element in vector and perform general method to find it is plaindrome or not
+
 *Approach 2-
+
 Following are the steps to this approach:-
 *Find the middle element of the linked list.
+
 *Reverse linked list from next element of middle element.
+
 *Iterate through the new list until the middle element reaches the end of the list.
+
 *Use a dummy node to check if the same element exists in the linked list from the middle element.
