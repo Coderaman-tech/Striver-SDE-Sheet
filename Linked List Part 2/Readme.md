@@ -21,3 +21,5 @@ Following are the steps to this approach:-
 *Iterate through the new list until the middle element reaches the end of the list.
 
 *Use a dummy node to check if the same element exists in the linked list from the middle element.
+
+# Reverse Nodes in k-Group
